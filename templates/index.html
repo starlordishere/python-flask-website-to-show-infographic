@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+  copied from the internet
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>BIG MAC INDEX BY Sulav Rijal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#">BIG MAC DATA</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>The Economist - Big Mac Index</h1>
+							</header>
+              <section>
+                <!-- Create table to represent numbers -->
+                <table>
+                  <tr>
+                    <!-- Set table heading -->
+                    <th>COUNTRY</th>
+                    <th>LOCAL BURGER PRICE</th>
+                    <th>DOLLAR EXCHANGE RATE</th>
+                    <th>DOLLAR PRICE</th>
+                    <th>PPP</th>
+                    <th>DOLLAR VALLUATION </th>
+                  </tr>
+                  <tr>
+                    <!-- Display the rendered data -->
+                    <td>{{data[0]['countryname']}}</td>
+                    <td>{{data[0]['local_price']}}</td>
+                    <td>{{data[0]['dollar_ex']}}</td>
+                    <td>{{data[0]['dollar_price']}}</td>
+                    <td>{{data[0]['dollar_ppp']}}</td>
+                    <td>{{data[0]['dollar_valuation']}}</td>
+                  </tr>
+                  <tr>
+                    <td>{{data[1]['countryname']}}</td>
+                    <td>{{data[1]['local_price']}}</td>
+                    <td>{{data[1]['dollar_ex']}}</td>
+                    <td>{{data[1]['dollar_price']}}</td>
+                    <td>{{data[1]['dollar_ppp']}}</td>
+                    <td>{{data[1]['dollar_valuation']}}</td>
+
+                  </tr>
+                  <tr>
+                    <td>{{data[2]['countryname']}}</td>
+                    <td>{{data[2]['local_price']}}</td>
+                    <td>{{data[2]['dollar_ex']}}</td>
+                    <td>{{data[2]['dollar_price']}}</td>
+                    <td>{{data[2]['dollar_ppp']}}</td>
+                    <td>{{data[2]['dollar_valuation']}}</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>{{data[3]['countryname']}}</td>
+                    <td>{{data[3]['local_price']}}</td>
+                    <td>{{data[3]['dollar_ex']}}</td>
+                    <td>{{data[3]['dollar_price']}}</td>
+                    <td>{{data[3]['dollar_ppp']}}</td>
+                    <td>{{data[3]['dollar_valuation']}}</td>
+
+                  </tr>
+                </table>
+                
+              </section>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+                    <!-- Display country flag in background -->
+										<img src="{{data[0]['flagurl']}}"alt="" />
+									</span>
+									<a href="#">
+										<h2>{{data[0]['countryname']}}</h2>
+										<div class="content">
+                      <!-- Describe the purchasing power -->
+											<p>You can get {{burgerdata[0]}} for {{data[0]['local_price']}} USD.</p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="{{data[1]['flagurl']}}"alt="" />
+									</span>
+									<a href="#">
+										<h2>{{data[1]['countryname']}}</h2>
+										<div class="content">
+											<p>You can get {{burgerdata[1]}} for {{data[0]['local_price']}} USD.</p>
+                      <p>
+                        1 USD = {{data[3]['dollar_ex']}} Nicaraguan córdoba
+
+                      </p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="{{data[2]['flagurl']}}" alt="" />
+									</span>
+									<a href="#">
+										<h2>{{data[2]['countryname']}}</h2>
+										<div class="content">
+											<p>You can get {{burgerdata[2]}} for {{data[0]['local_price']}} USD.</p>
+                      <p>
+                        1 USD = {{data[2]['dollar_ex']}} moldoven leu
+                      </p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="{{data[3]['flagurl']}}" alt="" />
+									</span>
+									<a href="#">
+										<h2>{{data[3]['countryname']}}</h2>
+										<div class="content">
+											<p>You can get {{burgerdata[3]}} for {{data[0]['local_price']}} USD.</p>
+                      <p>
+                        1 USD = {{data[3]['dollar_ex']}} dinnar
+                      </p>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
+        <h3>This website template is copied by Sulav Rijal from the html5up.net</h3>
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
